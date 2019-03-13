@@ -12,6 +12,7 @@ class MainActivity : BaseActivity() {
         const val KEY_ID = "id"
     }
 
+    // TODO: initialize ViewModel with intent.getIntExtra(KEY_ID, 0)
     @Inject
     lateinit var viewModel: MainViewModel
 

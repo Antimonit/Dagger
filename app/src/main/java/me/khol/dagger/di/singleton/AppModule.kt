@@ -10,9 +10,14 @@ import javax.inject.Singleton
 /**
  * Main application module
  */
+// TODO: What are the subcomponents here? Why should we use it?
 @Module(
+    includes = [
+        ViewModelModule::class,
+        UIModule::class
+    ],
     subcomponents = [
-//        OnboardingComponent::class
+        OnboardingComponent::class
     ]
 )
 abstract class AppModule {

@@ -5,9 +5,7 @@ import dagger.Subcomponent
 @OnboardingScope
 @Subcomponent(
     modules = [
-        OnboardingRepositoryModule::class,
-        OnboardingUIModule::class,
-        OnboardingViewModelModule::class
+        OnboardingModule::class
     ]
 )
 interface OnboardingComponent {
@@ -15,7 +13,6 @@ interface OnboardingComponent {
     @Subcomponent.Builder
     interface Builder {
 
-//        fun requestModule(module: RequestModule): Builder
         fun build(): OnboardingComponent
     }
 }

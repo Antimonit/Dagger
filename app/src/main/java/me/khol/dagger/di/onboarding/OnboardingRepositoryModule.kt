@@ -12,6 +12,7 @@ import javax.inject.Singleton
 @Module
 abstract class OnboardingRepositoryModule {
 
+    @OnboardingScope
     @Binds
     abstract fun bindOnboardingRepository(repository: OnboardingRepositoryImpl): OnboardingRepository
 }

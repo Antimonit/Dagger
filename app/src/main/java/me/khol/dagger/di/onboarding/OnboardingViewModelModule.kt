@@ -7,7 +7,6 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 import me.khol.dagger.di.OnboardingViewModelFactory
 import me.khol.dagger.di.ViewModelKey
-import me.khol.dagger.screens.main.MainViewModel
 import me.khol.dagger.screens.onboarding.OnboardingViewModel
 import me.khol.dagger.screens.onboarding.step.one.OneViewModel
 import me.khol.dagger.screens.onboarding.step.three.ThreeViewModel

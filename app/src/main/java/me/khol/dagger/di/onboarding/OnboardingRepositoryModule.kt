@@ -1,4 +1,4 @@
-package me.khol.dagger.di
+package me.khol.dagger.di.onboarding
 
 import dagger.Binds
 import dagger.Module
@@ -10,9 +10,8 @@ import javax.inject.Singleton
  * Module for providing repositories
  */
 @Module
-abstract class RepositoryModule {
+abstract class OnboardingRepositoryModule {
 
-    @Singleton
     @Binds
     abstract fun bindOnboardingRepository(repository: OnboardingRepositoryImpl): OnboardingRepository
 }

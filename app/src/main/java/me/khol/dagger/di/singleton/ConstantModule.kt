@@ -1,4 +1,4 @@
-package me.khol.dagger.di
+package me.khol.dagger.di.singleton
 
 import dagger.Module
 import dagger.Provides

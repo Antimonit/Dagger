@@ -1,4 +1,4 @@
-package me.khol.dagger.di
+package me.khol.dagger.di.onboarding
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -9,20 +9,8 @@ import me.khol.dagger.screens.onboarding.step.one.OneFragment
 import me.khol.dagger.screens.onboarding.step.three.ThreeFragment
 import me.khol.dagger.screens.onboarding.step.two.TwoFragment
 
-/**
- * Module that creates subcomponents and modules for UI components as Fragments or Activities
- */
 @Module
-abstract class UIModule {
-
-	@ContributesAndroidInjector
-	abstract fun bindIntroActivity(): IntroActivity
-
-	@ContributesAndroidInjector
-	abstract fun bindOnboardingActivity(): OnboardingActivity
-
-	@ContributesAndroidInjector
-	abstract fun bindMainActivity(): MainActivity
+abstract class OnboardingUIModule {
 
 
 	@ContributesAndroidInjector

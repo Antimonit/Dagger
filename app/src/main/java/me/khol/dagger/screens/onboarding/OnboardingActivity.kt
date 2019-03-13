@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.commit
 import io.reactivex.rxkotlin.plusAssign
 import me.khol.dagger.R
+import me.khol.dagger.di.onboarding.OnboardingScope
 import me.khol.dagger.screens.base.BaseActivity
 import me.khol.dagger.repository.Action
 import me.khol.dagger.repository.Step

@@ -2,7 +2,7 @@ package me.khol.dagger
 
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
-import me.khol.dagger.di.DaggerAppComponent
+import me.khol.dagger.di.singleton.DaggerAppComponent
 
 class App : DaggerApplication() {
 

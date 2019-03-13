@@ -1,39 +1,28 @@
-package me.khol.dagger.di
+package me.khol.dagger.di.onboarding
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
+import me.khol.dagger.di.OnboardingViewModelFactory
+import me.khol.dagger.di.ViewModelKey
 import me.khol.dagger.screens.main.MainViewModel
 import me.khol.dagger.screens.onboarding.OnboardingViewModel
 import me.khol.dagger.screens.onboarding.step.one.OneViewModel
 import me.khol.dagger.screens.onboarding.step.three.ThreeViewModel
 import me.khol.dagger.screens.onboarding.step.two.TwoViewModel
 
-/**
- * Dagger Module for providing general viewmodels and viewmodel factory
- */
 @Module
-abstract class ViewModelModule {
+abstract class OnboardingViewModelModule {
 
     @Binds
-    abstract fun bindViewModelFactory(factory: SingletonViewModelFactory): ViewModelProvider.Factory
-
-//    @Binds
-//    @IntoMap
-//    @ViewModelKey(IntroViewModel::class)
-//    abstract fun bindIntroViewModel(): IntroViewModel
+    abstract fun bindViewModelFactory(factory: OnboardingViewModelFactory): ViewModelProvider.Factory
 
     @Binds
     @IntoMap
     @ViewModelKey(OnboardingViewModel::class)
     abstract fun bindOnboardingViewModel(vm: OnboardingViewModel): ViewModel
-
-    @Binds
-    @IntoMap
-    @ViewModelKey(MainViewModel::class)
-    abstract fun bindMainViewModel(vm: MainViewModel): ViewModel
 
 
     @Binds
